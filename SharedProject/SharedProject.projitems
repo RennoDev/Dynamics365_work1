@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c3a41435-e584-45b1-a20e-6b65fce28da7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SharedProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\AccountController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\ContactController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\LeadController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\OpportunityController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\AccountModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ContactModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\LeadModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OpportunityModel.cs" />
+  </ItemGroup>
+</Project>
